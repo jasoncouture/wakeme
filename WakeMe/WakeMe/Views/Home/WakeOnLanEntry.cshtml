@@ -1,0 +1,9 @@
+﻿@model WakeMe.Models.WakeOnLanEntry
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(i => i.Id)
+    @Html.HiddenFor(i => i.MacAddress)
+    @Html.HiddenFor(i => i.Name)
+    <input type="submit" class="btn btn-success" value="Wake Up!"/>
+}
